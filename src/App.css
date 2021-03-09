@@ -1,38 +1,99 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cardscss {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav_tag {
+    background: rgb(106, 106, 248);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.menu_input {
+    display: flex;
+    flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+.menu_icon {
+    color: #fff;
+    left: 10px;
+    margin-left: 5px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input_tag {
+    color: #fff;
+    background: rgb(106, 106, 248);
+    padding: 5px;
+    outline: none;
+    outline-style: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+.cls_mail {
+    display: flex;
+    flex-direction: row;
+}
+
+/* .clear_btn {
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: rgb(106, 106, 248);
+    padding: 5px;
+    outline: none;
+    outline-style: none;
+    margin-right: 20px;
+}
+
+.clear_btn:hover {
+    cursor: pointer;
+    border: 2px solid rgb(106, 106, 248);
+    background: white;
+    color: rgb(106, 106, 248);
+    transform: scale(1.2);
+    transition: 1s;
+} */
+
+.del_icon {
+    color: white;
+    margin-left: 20px;
+}
+
+.del_icon:hover {
+    cursor: pointer;
+    color: red;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.mail_icon {
+    color: #fff;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+    .cardscss {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
 }

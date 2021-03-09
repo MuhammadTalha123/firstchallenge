@@ -67,8 +67,6 @@ export default function MediaCard() {
           </Badge>
         </div>
       </nav>
-      <div>
-      </div>
       <div className="cardscss">
         {JSONDATA.filter((val) => {
           if (searchTerm == "") {

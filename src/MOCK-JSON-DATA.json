@@ -1,32 +1,32 @@
 [
-    {
-        "name": "Lizard",
-        "imagesrc": "https://static.scientificamerican.com/sciam/cache/file/35BB522C-1F80-4EA3-AD1A257F9B636908_source.jpg?w=590&h=800&47D6048D-D602-419B-B2B0A97B77D665FE",
-        "description": "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"
-    },
-    {
-        "name": "Snake",
-        "imagesrc": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/1486F/production/_105597048_snakes8.jpg",
-        "description": "Snakes are limbless reptiles with long, cylindrical bodies, scaly skin, lidless eyes, and a forked tongue."
-    },
-    {
-        "name": "Lion",
-        "imagesrc": "https://cdn.britannica.com/29/150929-050-547070A1/lion-Kenya-Masai-Mara-National-Reserve.jpg",
-        "description": "The lion is a large mammal of the Felidae family. Some large males weigh over 250 kg. Today, wild lions live in sub-Saharan Africa and in Asia."
-    },
-    {
-        "name": "Elephant",
-        "imagesrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2glv2VNOFidcNvn2Cu1ptDSDVWlZrx_qTDQ&usqp=CAU",
-        "description": "Elephant, largest living land animal, characterized by its long trunk, columnar legs, flat ears."
-    },
-    {
-        "name": "Dog",
-        "imagesrc": "https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg",
-        "description": "Dogs (Canis lupus familiaris) are domesticated mammals, not natural wild animals. They were originally bred from wolves."
-    },
-    {
-        "name": "Horse",
-        "imagesrc": "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f664f1ec2191c793cf3bd8d%2F0x0.jpg",
-        "description": "Horses are ungulates — mammals with hooves. They also have long tails, short hair, muscular torsos, long thick necks and elongated heads."
-    }
+  {
+    "name": "Lizard",
+    "imagesrc": "https://static.scientificamerican.com/sciam/cache/file/35BB522C-1F80-4EA3-AD1A257F9B636908_source.jpg?w=590&h=800&47D6048D-D602-419B-B2B0A97B77D665FE",
+    "description": "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"
+  },
+  {
+    "name": "Snake",
+    "imagesrc": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/1486F/production/_105597048_snakes8.jpg",
+    "description": "Snakes are limbless reptiles with long, cylindrical bodies, scaly skin, lidless eyes, and a forked tongue."
+  },
+  {
+    "name": "Lion",
+    "imagesrc": "https://cdn.britannica.com/29/150929-050-547070A1/lion-Kenya-Masai-Mara-National-Reserve.jpg",
+    "description": "The lion is a large mammal of the Felidae family. Some large males weigh over 250 kg. Today, wild lions live in sub-Saharan Africa and in Asia."
+  },
+  {
+    "name": "Elephant",
+    "imagesrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2glv2VNOFidcNvn2Cu1ptDSDVWlZrx_qTDQ&usqp=CAU",
+    "description": "Elephant, largest living land animal, characterized by its long trunk, columnar legs, flat ears."
+  },
+  {
+    "name": "Dog",
+    "imagesrc": "https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg",
+    "description": "Dogs (Canis lupus familiaris) are domesticated mammals, not natural wild animals. They were originally bred from wolves."
+  },
+  {
+    "name": "Horse",
+    "imagesrc": "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f664f1ec2191c793cf3bd8d%2F0x0.jpg",
+    "description": "Horses are ungulates — mammals with hooves. They also have long tails, short hair, muscular torsos, long thick necks and elongated heads."
+  }
 ]

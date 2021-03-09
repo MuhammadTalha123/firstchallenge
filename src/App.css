@@ -13,7 +13,7 @@
 
 .nav_tag {
     background: rgb(106, 106, 248);
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     font-size: 16px;
@@ -23,6 +23,7 @@
 .menu_input {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .menu_icon {
@@ -52,6 +53,7 @@
 .cls_mail {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 /* .clear_btn {
@@ -107,11 +109,11 @@
     transition: 0.4s;
 }
 
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
     .cardscss {
         flex-direction: column;
         justify-content: center;
         text-align: center;
         flex-flow: wrap;
     }
-}
+} */

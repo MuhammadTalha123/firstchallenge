@@ -43,7 +43,7 @@ export default function MediaCard() {
       <div className="main_div" >
       <nav className="nav_tag" >
       <div className="menu_input" >
-        <MenuIcon className="menu_icon" />
+      <img src="https://bacc.pk/wp-content/uploads/2020/07/57966-Converted.png" width="60" />
         <input type="text" className="input_tag" placeholder="search...." onChange={(event) => {
             setSearchTerm(event.target.value)
         }} /> 

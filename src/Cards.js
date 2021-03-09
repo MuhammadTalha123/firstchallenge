@@ -82,7 +82,7 @@ export default function MediaCard() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary" onClick={myCartFunction}>
+          <Button id="add_cart_btn" size="small" color="primary" onClick={myCartFunction}>
             Add To Cart
           </Button>
         </CardActions>

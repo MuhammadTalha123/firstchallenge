@@ -128,10 +128,11 @@
 }
 
 .cart_main_div h1 {
+  color: #fff;
   font-size: 50px;
   font-family: 'Akaya Telivigala', cursive;
   text-align: center;
-  text-shadow: 2px 2px  #02adad
+  text-shadow: 5px 5px rgb(106, 106, 248)
   ;
 }
 /* @media screen and (max-width: 1400px) {

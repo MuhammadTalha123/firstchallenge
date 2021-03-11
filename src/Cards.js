@@ -7,7 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import MailIcon from "@material-ui/icons/Mail";
+import LocalGroceryStoreIcon from '@material-ui/icons/LocalGroceryStore';
 import JSONDATA from "./MOCK-JSON-DATA.json";
 import Badge from "@material-ui/core/Badge";
 import DeleteIcon from "@material-ui/icons/Delete";
@@ -73,7 +73,7 @@ function MediaCard(props) {
             color="secondary"
           >
             <Tooltip title="Check Cart">
-              <MailIcon
+              <LocalGroceryStoreIcon
                 className="mail_icon"
                 onClick={() => {
                   history.push("./cart");

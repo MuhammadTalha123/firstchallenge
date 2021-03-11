@@ -7,7 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import LocalGroceryStoreIcon from '@material-ui/icons/LocalGroceryStore';
+import LocalGroceryStoreIcon from "@material-ui/icons/LocalGroceryStore";
 import JSONDATA from "./MOCK-JSON-DATA.json";
 import Badge from "@material-ui/core/Badge";
 import DeleteIcon from "@material-ui/icons/Delete";
@@ -41,8 +41,8 @@ function MediaCard(props) {
 
   let clear = () => {
     store.dispatch({
-      type: "CLEAR_CART"
-    })
+      type: "CLEAR_CART",
+    });
   };
 
   return (
@@ -50,6 +50,7 @@ function MediaCard(props) {
       <nav className="nav_tag">
         <div className="menu_input">
           <img
+            className="logo_img"
             src="https://bacc.pk/wp-content/uploads/2020/07/57966-Converted.png"
             width="60"
           />
@@ -123,7 +124,7 @@ function MediaCard(props) {
                   id="add_cart_btn"
                   size="small"
                   color="primary"
-                  onClick={()=>Addme(val)}
+                  onClick={() => Addme(val)}
                 >
                   Add To Cart
                 </Button>

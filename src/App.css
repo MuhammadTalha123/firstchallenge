@@ -105,6 +105,12 @@
   transition: 0.5s;
 }
 
+.logo_img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
 #add_cart_btn {
   color: black;
   text-align: center;
@@ -124,10 +130,8 @@
 .cart_main_div h1 {
   font-size: 50px;
   font-family: 'Akaya Telivigala', cursive;
-  background: #91efff;
-  width: 100%;
   text-align: center;
-  text-shadow: 3px 3px  #004d4d
+  text-shadow: 2px 2px  #02adad
   ;
 }
 /* @media screen and (max-width: 1400px) {

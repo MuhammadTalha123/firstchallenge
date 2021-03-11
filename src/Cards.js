@@ -39,12 +39,6 @@ function MediaCard(props) {
     });
   };
 
-  let clear = () => {
-    store.dispatch({
-      type: "CLEAR_CART",
-    });
-  };
-
   return (
     <div className="main_div">
       <nav className="nav_tag">
@@ -64,9 +58,6 @@ function MediaCard(props) {
           />
         </div>
         <div className="cls_mail">
-          <Tooltip title="Delete">
-            <DeleteIcon className="del_icon" onClick={clear} />
-          </Tooltip>
           <Badge
             badgeContent={props.cartValue}
             id="cart_numbers"

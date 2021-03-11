@@ -7,11 +7,14 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import MenuIcon from "@material-ui/icons/Menu";
 import MailIcon from "@material-ui/icons/Mail";
 import JSONDATA from "./MOCK-JSON-DATA.json";
 import Badge from "@material-ui/core/Badge";
 import DeleteIcon from "@material-ui/icons/Delete";
+import Tooltip from "@material-ui/core/Tooltip";
+import history from "./history";
+import store from "./store/Store";
+import { connect } from "react-redux";
 
 const useStyles = makeStyles({
   root: {
@@ -25,17 +28,21 @@ const useStyles = makeStyles({
   },
 });
 
-export default function MediaCard() {
+function MediaCard(props) {
   const classes = useStyles();
   const [searchTerm, setSearchTerm] = useState("");
-  const [cartNumber, setCartNumber] = useState(0);
 
-  const myCartFunction = (e) => {
-    setCartNumber(cartNumber + 1);
+  let Addme = (value) => {
+    store.dispatch({
+      type: "ADD_ITEM",
+      value: value,
+    });
   };
 
-  const clearFunction = () => {
-    setCartNumber(0);
+  let clear = () => {
+    store.dispatch({
+      type: "CLEAR_CART"
+    })
   };
 
   return (
@@ -56,14 +63,23 @@ export default function MediaCard() {
           />
         </div>
         <div className="cls_mail">
-          <DeleteIcon className="del_icon" onClick={clearFunction} />
+          <Tooltip title="Delete">
+            <DeleteIcon className="del_icon" onClick={clear} />
+          </Tooltip>
           <Badge
-            badgeContent={cartNumber}
+            badgeContent={props.cartValue}
             id="cart_numbers"
             className="addCartNumbers"
             color="secondary"
           >
-            <MailIcon className="mail_icon" />
+            <Tooltip title="Check Cart">
+              <MailIcon
+                className="mail_icon"
+                onClick={() => {
+                  history.push("./cart");
+                }}
+              />
+            </Tooltip>
           </Badge>
         </div>
       </nav>
@@ -107,7 +123,7 @@ export default function MediaCard() {
                   id="add_cart_btn"
                   size="small"
                   color="primary"
-                  onClick={myCartFunction}
+                  onClick={()=>Addme(val)}
                 >
                   Add To Cart
                 </Button>
@@ -119,3 +135,11 @@ export default function MediaCard() {
     </div>
   );
 }
+
+const mapStateToProps = (state) => {
+  return {
+    cartValue: state.cartValue,
+  };
+};
+
+export default connect(mapStateToProps)(MediaCard);

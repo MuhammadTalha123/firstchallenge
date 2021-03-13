@@ -126,7 +126,7 @@ function Cart(props) {
                   </CardActionArea>
                   <CardActions>
                     <Button
-                      id="add_cart_btn"
+                      id="plus_cart_btn"
                       size="small"
                       color="primary"
                       onClick={() => handleQuantity("+", val)}
@@ -137,7 +137,7 @@ function Cart(props) {
                       {val.quantity}
                     </Typography>
                     <Button
-                      id="add_cart_btn"
+                      id="minus_cart_btn"
                       size="small"
                       color="primary"
                       onClick={() => handleQuantity("-", val)}
@@ -145,7 +145,7 @@ function Cart(props) {
                       <RemoveCircleOutlineIcon />
                     </Button>
                     <Button
-                      id="add_cart_btn"
+                      id="del_cart_btn"
                       size="small"
                       color="primary"
                       onClick={() => delItem(val)}

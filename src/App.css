@@ -115,12 +115,58 @@
   color: black;
   text-align: center;
   justify-content: center;
+  margin-left: 100px;
   border: 1px solid black;
 }
 
 #add_cart_btn:hover {
   border: 1px solid white;
   background: black;
+  color: white;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+#plus_cart_btn {
+  color: black;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+#plus_cart_btn:hover {
+  border: 1px solid white;
+  background: black;
+  color: white;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+#minus_cart_btn {
+  color: black;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+#minus_cart_btn:hover {
+  border: 1px solid white;
+  background: black;
+  color: white;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+#del_cart_btn {
+  color: red;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+#del_cart_btn:hover {
+  border: 1px solid white;
+  background: red;
   color: white;
   transform: scale(1.1);
   transition: 0.4s;

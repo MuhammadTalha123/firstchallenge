@@ -12,8 +12,8 @@ import Button from "@material-ui/core/Button";
 import DeleteIcon from "@material-ui/icons/Delete";
 import store from "./store/Store";
 import history from "./history";
-import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
-import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
+import RemoveCircleOutlineIcon from "@material-ui/icons/RemoveCircleOutline";
+import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 
 const useStyles = makeStyles({
   root: {
@@ -142,7 +142,7 @@ function Cart(props) {
                       color="primary"
                       onClick={() => handleQuantity("-", val)}
                     >
-                    <RemoveCircleOutlineIcon />
+                      <RemoveCircleOutlineIcon />
                     </Button>
                     <Button
                       id="add_cart_btn"

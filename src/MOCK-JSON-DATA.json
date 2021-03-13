@@ -2,6 +2,7 @@
   {
     "id": "1",
     "name": "Lizard",
+    "price": 20,
     "quantity": 0,
     "imagesrc": "https://static.scientificamerican.com/sciam/cache/file/35BB522C-1F80-4EA3-AD1A257F9B636908_source.jpg?w=590&h=800&47D6048D-D602-419B-B2B0A97B77D665FE",
     "description": "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"
@@ -9,6 +10,7 @@
   {
     "id": "2",
     "name": "Snake",
+    "price": 30,
     "quantity": 0,
     "imagesrc": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/1486F/production/_105597048_snakes8.jpg",
     "description": "Snakes are limbless reptiles with long, cylindrical bodies, scaly skin, lidless eyes, and a forked tongue."
@@ -16,6 +18,7 @@
   {
     "id": "3",
     "name": "Lion",
+    "price": 90,
     "quantity": 0,
     "imagesrc": "https://cdn.britannica.com/29/150929-050-547070A1/lion-Kenya-Masai-Mara-National-Reserve.jpg",
     "description": "The lion is a large mammal of the Felidae family. Some large males weigh over 250 kg. Today, wild lions live in sub-Saharan Africa and in Asia."
@@ -23,6 +26,7 @@
   {
     "id": "4",
     "name": "Elephant",
+    "price": 70,
     "quantity": 0,
     "imagesrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2glv2VNOFidcNvn2Cu1ptDSDVWlZrx_qTDQ&usqp=CAU",
     "description": "Elephant, largest living land animal, characterized by its long trunk, columnar legs, flat ears."
@@ -30,6 +34,7 @@
   {
     "id": "5",
     "name": "Dog",
+    "price": 30,
     "quantity": 0,
     "imagesrc": "https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg",
     "description": "Dogs (Canis lupus familiaris) are domesticated mammals, not natural wild animals. They were originally bred from wolves."
@@ -37,6 +42,7 @@
   {
     "id": "6",
     "name": "Horse",
+    "price": 50,
     "quantity": 0,
     "imagesrc": "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f664f1ec2191c793cf3bd8d%2F0x0.jpg",
     "description": "Horses are ungulates — mammals with hooves. They also have long tails, short hair, muscular torsos, long thick necks and elongated heads."
@@ -44,6 +50,7 @@
   {
     "id": "7",
     "name": "Panda",
+    "price": 60,
     "quantity": 0,
     "imagesrc": "https://lh3.googleusercontent.com/proxy/0WXKJ0wl60k59RmaHad-_qJu0bbdya8GWU8pUbawBSuqFs_8K79OGCwpltpsH378CtpGSpVhcI05ok5Zjca1H0G-6ERimXrtdsPRpT7jvWwUBrSaY0ru0lpaJCNhA1NVJlAffyj3CMmZ2Q1S1JuDDI1AoYl16OW2r9sk",
     "description": "Giant pandas have a distinctive black and white coat, with black fur around their eyes and on their ears, muzzle, legs and shoulders."
@@ -51,6 +58,7 @@
   {
     "id": "8",
     "name": "Monkey",
+    "price": 40,
     "quantity": 0,
     "imagesrc": "https://api.hub.jhu.edu/factory/sites/default/files/styles/landscape/public/monkey092018.jpg?itok=dwu7HH3a",
     "description": "Monkeys live in trees, grasslands, mountains, forests, and on high plains. A group of monkeys is called a troop"
@@ -58,6 +66,7 @@
   {
     "id": "9",
     "name": "Fish",
+    "price": 10,
     "quantity": 0,
     "imagesrc": "https://images.pexels.com/photos/2156311/pexels-photo-2156311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     "description": "Fish are cold-blooded. True fish have a backbone and fins. Most also breathe with gills and have scales that cover their bodies."

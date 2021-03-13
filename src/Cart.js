@@ -164,12 +164,12 @@ function Cart(props) {
         <div className="item_Price">
           <h2>Summary</h2>
           <div className="item_number">
-            <h3>Total Item:</h3>
-            <h3>0</h3>
+            <h3>Total Items:</h3>
+            <h3>10</h3>
           </div>
           <div className="item_number">
             <h3>Total Price:</h3>
-            <h3>$0</h3>
+            <h3>$100</h3>
           </div>
           <div className="checkout_btn">
             <button>CHECK OUT</button>

@@ -150,7 +150,7 @@ function Cart(props) {
                       color="primary"
                       onClick={() => delItem(val)}
                     >
-                      Delete Item
+                      <DeleteIcon /> Delete Item
                     </Button>
                   </CardActions>
                 </Card>

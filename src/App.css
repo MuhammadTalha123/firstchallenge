@@ -164,7 +164,7 @@
 .main_summary_div {
   display: flex;
   flex-flow: row-reverse;
-  margin: 0 25px 0 0
+  margin: 0 16px 0 0
 }
 
 .item_Price {

@@ -115,6 +115,9 @@ function Cart(props) {
                       <Typography gutterBottom variant="h5" component="h2">
                         {val.name}
                       </Typography>
+                      <Typography gutterBottom variant="h5" component="h2">
+                        {`Price $${val.price}`}
+                      </Typography>
                       <Typography
                         variant="body2"
                         color="textSecondary"
@@ -160,7 +163,7 @@ function Cart(props) {
           <h1>No Item</h1>
         )}
       </div>
-      <div className="main_summary_div" >
+      <div className="main_summary_div">
         <div className="item_Price">
           <h2>Summary</h2>
           <div className="item_number">
@@ -169,7 +172,7 @@ function Cart(props) {
           </div>
           <div className="item_number">
             <h3>Total Price:</h3>
-            <h3>$100</h3>
+            <h3> { `$${props.cartList.price}` } </h3>
           </div>
           <div className="checkout_btn">
             <button>CHECK OUT</button>

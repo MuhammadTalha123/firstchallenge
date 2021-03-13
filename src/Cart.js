@@ -160,18 +160,20 @@ function Cart(props) {
           <h1>No Item</h1>
         )}
       </div>
-      <div className="item_Price" >
-        <h2>Summary</h2>
-        <div className="item_number" >
-          <h3>item</h3>
-          <h3>0</h3>
-        </div>
-        <div className="item_number" >
-          <h3>Price</h3>
-          <h3>$0</h3>
-        </div>
-        <div className="checkout_btn" >
-        <button>CHECK OUT</button>
+      <div className="main_summary_div" >
+        <div className="item_Price">
+          <h2>Summary</h2>
+          <div className="item_number">
+            <h3>Total Item:</h3>
+            <h3>0</h3>
+          </div>
+          <div className="item_number">
+            <h3>Total Price:</h3>
+            <h3>$0</h3>
+          </div>
+          <div className="checkout_btn">
+            <button>CHECK OUT</button>
+          </div>
         </div>
       </div>
     </div>

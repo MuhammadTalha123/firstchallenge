@@ -43,6 +43,7 @@
   outline: none;
   outline-style: none;
   border: 2px solid white;
+  font-size: 16px;
   border-radius: 5px;
   margin-left: 20px;
 }
@@ -89,7 +90,7 @@
 .del_icon:hover {
   cursor: pointer;
   color: red;
-  transform: scale(1.5);
+  transform: scale(1.9);
   transition: 0.5s;
 }
 
@@ -101,8 +102,8 @@
 
 .mail_icon:hover {
   cursor: pointer;
-  color: rgb(154, 186, 237);
-  transform: scale(1.5);
+  color:  #ccccff;
+  transform: scale(2);
   transition: 0.5s;
 }
 
@@ -129,30 +130,30 @@
 }
 
 #plus_cart_btn {
-  color: black;
+  color: rgb(106, 106, 248);
   text-align: center;
   justify-content: center;
-  border: 1px solid black;
+  border: 1px solid rgb(106, 106, 248);
 }
 
 #plus_cart_btn:hover {
   border: 1px solid white;
-  background: black;
+  background:  rgb(106, 106, 248);
   color: white;
   transform: scale(1.1);
   transition: 0.4s;
 }
 
 #minus_cart_btn {
-  color: black;
+  color: rgb(106, 106, 248);
   text-align: center;
   justify-content: center;
-  border: 1px solid black;
+  border: 1px solid rgb(106, 106, 248);
 }
 
 #minus_cart_btn:hover {
   border: 1px solid white;
-  background: black;
+  background: rgb(106, 106, 248);
   color: white;
   transform: scale(1.1);
   transition: 0.4s;

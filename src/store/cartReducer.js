@@ -19,15 +19,15 @@ let addToList = (state, action) => {
 let deleteItem = (state, action) => {
   state.cartValue -= 1;
   let newCartList = state.cartList.filter((item) => {
-    return item.id !== action.value.id
-  })
-  state.cartList = newCartList
+    return item.id !== action.value.id;
+  });
+  state.cartList = newCartList;
   return state;
 };
 
 let addQuantity = (state, action) => {
   let cartList = state.cartList.map((item) => {
-    if(item.id == action.value.id){
+    if (item.id == action.value.id) {
       let value = action.value;
       value.quantity += 1;
       return value;
@@ -39,9 +39,9 @@ let addQuantity = (state, action) => {
 };
 
 let subtractQuantity = (state, action) => {
-  if(action.value.quantity > 1){
+  if (action.value.quantity > 1) {
     let cartList = state.cartList.map((item) => {
-      if(item.id == action.value.id){
+      if (item.id == action.value.id) {
         let value = action.value;
         value.quantity -= 1;
         return value;
@@ -58,13 +58,13 @@ export default function counterReducer(state = initialState, action) {
     case "ADD_ITEM":
       return { ...addToList(state, action) };
     case "DEL_ITEM":
-      return{...deleteItem(state, action)};
+      return { ...deleteItem(state, action) };
     case "CLEAR_CART":
       return { cartValue: 0, cartList: [] };
     case "ADD_QUANTITY":
-      return { ...addQuantity(state,action)};
+      return { ...addQuantity(state, action) };
     case "SUBTRACT_QUANTITY":
-      return { ...subtractQuantity(state,action)}
+      return { ...subtractQuantity(state, action) };
     default:
       return state;
   }

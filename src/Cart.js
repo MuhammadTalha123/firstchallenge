@@ -40,21 +40,21 @@ function Cart(props) {
       type: "DEL_ITEM",
       value: value,
     });
-  }
+  };
 
-  let handleQuantity = (type,value) =>{
-    if(type === "+"){
+  let handleQuantity = (type, value) => {
+    if (type === "+") {
       store.dispatch({
         type: "ADD_QUANTITY",
         value: value,
       });
-    }else if(type === "-"){
+    } else if (type === "-") {
       store.dispatch({
         type: "SUBTRACT_QUANTITY",
         value: value,
       });
     }
-  }
+  };
 
   return (
     <div className="cart_main_div">
@@ -83,61 +83,80 @@ function Cart(props) {
           </Tooltip>
         </div>
       </nav>
-      {props.cartList.length?<h1>CART ITEMS</h1>:null}
+      {props.cartList.length ? <h1>CART ITEMS</h1> : null}
       <div className="cardscss">
-        {props.cartList.length?props.cartList
-          .filter((val) => {
-            if (searchTerm == "") {
-              return val;
-            } else if (
-              val.name.toLowerCase().includes(searchTerm.toLowerCase())
-            ) {
-              return val;
-            } else if (
-              val.description.toLowerCase().includes(searchTerm.toLowerCase())
-            ) {
-              return val;
-            }
-          })
-          .map((val, key) => {
-            return (
-              <Card className={classes.root}>
-                <CardActionArea>
-                  <CardMedia
-                    className={classes.media}
-                    image={val.imagesrc}
-                    title="Contemplative Reptile"
-                  />
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      {val.name}
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      component="p"
+        {props.cartList.length ? (
+          props.cartList
+            .filter((val) => {
+              if (searchTerm == "") {
+                return val;
+              } else if (
+                val.name.toLowerCase().includes(searchTerm.toLowerCase())
+              ) {
+                return val;
+              } else if (
+                val.description.toLowerCase().includes(searchTerm.toLowerCase())
+              ) {
+                return val;
+              }
+            })
+            .map((val, key) => {
+              return (
+                <Card className={classes.root}>
+                  <CardActionArea>
+                    <CardMedia
+                      className={classes.media}
+                      image={val.imagesrc}
+                      title="Contemplative Reptile"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="h2">
+                        {val.name}
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        color="textSecondary"
+                        component="p"
+                      >
+                        {val.description}
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                  <CardActions>
+                    <Button
+                      id="add_cart_btn"
+                      size="small"
+                      color="primary"
+                      onClick={() => handleQuantity("+", val)}
                     >
-                      {val.description}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                <Button id="add_cart_btn" size="small" color="primary" onClick={() => handleQuantity("+",val)}>
-                    +
-                  </Button>
-                  <Typography gutterBottom variant="h5" component="h2">
+                      +
+                    </Button>
+                    <Typography gutterBottom variant="h5" component="h2">
                       {val.quantity}
                     </Typography>
-                  <Button id="add_cart_btn" size="small" color="primary" onClick={() => handleQuantity("-",val)}>
-                    -
-                  </Button>
-                  <Button id="add_cart_btn" size="small" color="primary" onClick={() => delItem(val)}>
-                    Delete from Cart
-                  </Button>
-                </CardActions>
-              </Card>
-            );
-          }):<h1>No Item</h1>}
+                    <Button
+                      id="add_cart_btn"
+                      size="small"
+                      color="primary"
+                      onClick={() => handleQuantity("-", val)}
+                    >
+                      -
+                    </Button>
+                    <Button
+                      id="add_cart_btn"
+                      size="small"
+                      color="primary"
+                      onClick={() => delItem(val)}
+                    >
+                      Delete Item
+                    </Button>
+                  </CardActions>
+                </Card>
+              );
+            })
+        ) : (
+          <h1>No Item</h1>
+        )}
       </div>
     </div>
   );

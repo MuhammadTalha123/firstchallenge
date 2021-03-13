@@ -10,7 +10,6 @@ import Typography from "@material-ui/core/Typography";
 import LocalGroceryStoreIcon from "@material-ui/icons/LocalGroceryStore";
 import JSONDATA from "./MOCK-JSON-DATA.json";
 import Badge from "@material-ui/core/Badge";
-import DeleteIcon from "@material-ui/icons/Delete";
 import Tooltip from "@material-ui/core/Tooltip";
 import history from "./history";
 import store from "./store/Store";

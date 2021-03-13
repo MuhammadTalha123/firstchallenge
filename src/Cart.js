@@ -168,14 +168,16 @@ function Cart(props) {
           <h2>Summary</h2>
           <div className="item_number">
             <h3>Total Items:</h3>
-            <h3>10</h3>
+            <h3>{props.cartList.quantity}</h3>
           </div>
           <div className="item_number">
             <h3>Total Price:</h3>
             <h3> { `$${props.cartList.price}` } </h3>
           </div>
           <div className="checkout_btn">
-            <button>CHECK OUT</button>
+            <button onClick={() => {
+              alert(props.cartList.quantity)
+            }} >CHECK OUT</button>
           </div>
         </div>
       </div>

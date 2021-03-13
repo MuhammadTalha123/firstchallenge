@@ -1,6 +1,7 @@
 let initialState = {
   cartValue: 0,
   cartList: [],
+  totalPrice: 0,
 };
 
 let addToList = (state, action) => {

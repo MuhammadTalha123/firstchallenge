@@ -10,7 +10,7 @@
   {
     "id": "2",
     "name": "Snake",
-    "price": 30,
+    "price": 50,
     "quantity": 0,
     "imagesrc": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/1486F/production/_105597048_snakes8.jpg",
     "description": "Snakes are limbless reptiles with long, cylindrical bodies, scaly skin, lidless eyes, and a forked tongue."
@@ -26,7 +26,7 @@
   {
     "id": "4",
     "name": "Elephant",
-    "price": 70,
+    "price": 80,
     "quantity": 0,
     "imagesrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2glv2VNOFidcNvn2Cu1ptDSDVWlZrx_qTDQ&usqp=CAU",
     "description": "Elephant, largest living land animal, characterized by its long trunk, columnar legs, flat ears."
@@ -42,7 +42,7 @@
   {
     "id": "6",
     "name": "Horse",
-    "price": 50,
+    "price": 60,
     "quantity": 0,
     "imagesrc": "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f664f1ec2191c793cf3bd8d%2F0x0.jpg",
     "description": "Horses are ungulates — mammals with hooves. They also have long tails, short hair, muscular torsos, long thick necks and elongated heads."
@@ -50,7 +50,7 @@
   {
     "id": "7",
     "name": "Panda",
-    "price": 60,
+    "price": 70,
     "quantity": 0,
     "imagesrc": "https://lh3.googleusercontent.com/proxy/0WXKJ0wl60k59RmaHad-_qJu0bbdya8GWU8pUbawBSuqFs_8K79OGCwpltpsH378CtpGSpVhcI05ok5Zjca1H0G-6ERimXrtdsPRpT7jvWwUBrSaY0ru0lpaJCNhA1NVJlAffyj3CMmZ2Q1S1JuDDI1AoYl16OW2r9sk",
     "description": "Giant pandas have a distinctive black and white coat, with black fur around their eyes and on their ears, muzzle, legs and shoulders."

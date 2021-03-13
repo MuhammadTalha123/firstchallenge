@@ -161,3 +161,44 @@
   text-align: center;
   text-shadow: 5px 5px rgb(106, 106, 248);
 }
+
+.item_Price {
+  background: rgb(106, 106, 248);
+}
+
+.item_Price h2 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.item_number {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.item_number h3 {
+  font-size: 30px;
+}
+
+.checkout_btn button {
+  outline: none;
+  outline-style: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: #fff;
+  background: rgb(106, 106, 248);
+  width: 150px;
+  height: 40px;
+  margin: 0px 0px 20px 0px;
+  font-size: 20px;
+}
+
+.checkout_btn button:hover {
+  border: 1px solid rgb(106, 106, 248);
+  background: #fff;
+  color: rgb(106, 106, 248); 
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.2);
+}

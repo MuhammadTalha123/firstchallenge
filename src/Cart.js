@@ -14,6 +14,13 @@ import store from "./store/Store";
 import history from "./history";
 import RemoveCircleOutlineIcon from "@material-ui/icons/RemoveCircleOutline";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
+import Dialog from "@material-ui/core/Dialog";
+import DialogActions from "@material-ui/core/DialogActions";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useTheme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   root: {
@@ -30,6 +37,17 @@ const useStyles = makeStyles({
 function Cart(props) {
   const classes = useStyles();
   const [searchTerm, setSearchTerm] = useState("");
+  const [open, setOpen] = React.useState(false);
+  const theme = useTheme();
+  const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   let clear = () => {
     store.dispatch({
@@ -162,21 +180,38 @@ function Cart(props) {
           <h1>No Item</h1>
         )}
       </div>
-      { props.cartList.length != 0 ? ( <div className="main_summary_div">
-        <div className="item_Price">
-          <h2>Summary</h2>
-          <div className="item_number">
-            <h3>Total Items:</h3>
-            <h3>{props.totalItems}</h3>
-          </div>
-          <div className="item_number">
-            <h3>Total Price:</h3>
-            <h3> { `$${props.totalPrice}` } </h3>
-          </div>
-          <div className="checkout_btn">
-            <button>CHECK OUT</button>
-          </div>
-        </div>
+      { props.cartList.length != 0 ? (
+      <div>
+        <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+          Check Out
+        </Button>
+        <Dialog
+          fullScreen={fullScreen}
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="responsive-dialog-title"
+          id="dialog"
+        >
+          <DialogTitle id="responsive-dialog-title">Summary</DialogTitle>
+          <DialogContent>
+            <div className="item_number">
+              <h3>Total Items:</h3>
+              <h3>{props.totalItems}</h3>
+            </div>
+            <div className="item_number">
+              <h3>Total Price:</h3>
+              <h3> {`$${props.totalPrice}`} </h3>
+            </div>
+          </DialogContent>
+          <DialogActions>
+          <Button onClick={handleClose} color="primary" id="cancel_dialog">
+              Cancel
+            </Button>
+            <Button onClick={handleClose} color="primary" id="pay_dialog">
+              Proceed To Pay
+            </Button>
+          </DialogActions>
+        </Dialog>
       </div>) : (
         <h1></h1>
       )}
@@ -187,15 +222,15 @@ function Cart(props) {
 const mapStateToProps = (state) => {
   let totalItems = 0;
   let totalPrice = 0;
-  state.cartList.map((item)=>{
+  state.cartList.map((item) => {
     totalItems += item.quantity;
     totalPrice += item.quantity * item.price;
-  })
+  });
   return {
     cartList: state.cartList,
     cartValue: state.cartValue,
     totalItems: totalItems,
-    totalPrice: totalPrice
+    totalPrice: totalPrice,
   };
 };
 

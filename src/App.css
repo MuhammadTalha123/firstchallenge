@@ -177,18 +177,23 @@
 }
 
 .item_Price h2 {
-  color: #fff;
+  color: black;
   font-size: 40px;
+  font-family: "Akaya Telivigala", cursive;
+  margin: 0 20px;
 }
 
 .item_number {
   display: flex;
   justify-content: space-around;
-  color: #fff;
+  color: rgb(106, 106, 248);
+  /* margin: 20px 20px; */
 }
 
 .item_number h3 {
   font-size: 30px;
+  margin: 20px 20px;
+  font-family: "Akaya Telivigala", cursive;
 }
 
 .checkout_btn button {
@@ -212,3 +217,43 @@
   transition: 0.5s;
   transform: scale(1.2);
 }
+
+#responsive-dialog-title {
+  color: rgb(106, 106, 248);
+  font-family: "Akaya Telivigala", cursive;
+}
+
+#cancel_dialog {
+  color: red;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+#cancel_dialog:hover {
+  border: 1px solid white;
+  background: red;
+  color: white;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+#pay_dialog {
+  color: rgb(106, 106, 248);
+  text-align: center;
+  justify-content: center;
+  border: 1px solid rgb(106, 106, 248);
+}
+
+#pay_dialog:hover {
+  border: 1px solid white;
+  background: rgb(106, 106, 248);
+  color: white;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+
+/* 
+#dialog {
+  width: 0px;
+} */

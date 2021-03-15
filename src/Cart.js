@@ -39,6 +39,7 @@ function Cart(props) {
   const [searchTerm, setSearchTerm] = useState("");
   const [open, setOpen] = React.useState(false);
   const [openDialog, setOpenDialog] = React.useState(false);
+  const [itemDetail, setItemDetail] = React.useState({});
 
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
@@ -47,8 +48,9 @@ function Cart(props) {
     setOpen(true);
   };
 
-  const clickOpen = () => {
+  const clickOpen = (selectedItem) => {
     setOpenDialog(true);
+    setItemDetail(selectedItem);
   };
 
   const clickClose = () => {
@@ -132,7 +134,7 @@ function Cart(props) {
             .map((val, key) => {
               return (
                 <Card className={classes.root}>
-                  <CardActionArea onClick={clickOpen}>
+                  <CardActionArea onClick={()=>clickOpen(val)}>
                     <CardMedia
                       className={classes.media}
                       image={val.imagesrc}
@@ -240,25 +242,25 @@ function Cart(props) {
       ) : (
         <h1></h1>
       )}
-      <div className="item_detail_div">
+          <div className="item_detail_div">
       <Dialog
         fullScreen={fullScreen}
         open={openDialog}
         onClose={clickClose}
         aria-labelledby="responsive-dialog-title"
       >
-        <DialogTitle id="responsive-dialog-title" style={{display: "flex", justifyContent: "center"}}>{props.Name}</DialogTitle>
+        <DialogTitle id="responsive-dialog-title" style={{display: "flex", justifyContent: "center"}}>{itemDetail?.name}</DialogTitle>
         <DialogContent>
           <div className="img_div" style={{display: "flex", justifyContent: "center"}}>
             <img
-              src={props.imageUrl}
+              src={itemDetail?.imagesrc}
               alt="Dog Image"
               width="400"
               height="250"
             />
             </div>
             <DialogContentText style={{display: "flex", justifyContent: "center", textAlign: "center"}}>
-              {props.cartDes}
+              {itemDetail?.description}
             </DialogContentText>
           </DialogContent>
         <DialogActions>
@@ -275,25 +277,17 @@ function Cart(props) {
 const mapStateToProps = (state) => {
   let totalItems = 0;
   let totalPrice = 0;
-  let Name = state.cartList.name;
-  let imageUrl = state.cartList.imagesrc;
-  let cartDes = state.cartList.description;
-  console.log(Name)
+  
   state.cartList.map((item) => {
     totalItems += item.quantity;
     totalPrice += item.quantity * item.price;
-    // Name = item.name;
-    // imageUrl = item.imagesrc;
-    // cartDes = item.description;
+    
   });
   return {
     cartList: state.cartList,
     cartValue: state.cartValue,
     totalItems: totalItems,
     totalPrice: totalPrice,
-    Name: Name,
-    imageUrl: imageUrl,
-    cartDes: cartDes,
   };
 };
 

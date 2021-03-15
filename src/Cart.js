@@ -161,7 +161,8 @@ function Cart(props) {
         ) : (
           <h1>No Item</h1>
         )}
-        { props.cartList.length != 0 ? ( <div className="main_summary_div">
+      </div>
+      { props.cartList.length != 0 ? ( <div className="main_summary_div">
         <div className="item_Price">
           <h2>Summary</h2>
           <div className="item_number">
@@ -179,7 +180,6 @@ function Cart(props) {
       </div>) : (
         <h1></h1>
       )}
-      </div>
     </div>
   );
 }

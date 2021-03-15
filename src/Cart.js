@@ -85,7 +85,6 @@ function Cart(props) {
           </Tooltip>
         </div>
       </nav>
-      {props.cartList.length ? <h1>CART ITEMS</h1> : null}
       <div className="cardscss">
         {props.cartList.length ? (
           props.cartList
@@ -163,7 +162,7 @@ function Cart(props) {
           <h1>No Item</h1>
         )}
       </div>
-      <div className="main_summary_div">
+      { props.cartList.length != 0 ? ( <div className="main_summary_div">
         <div className="item_Price">
           <h2>Summary</h2>
           <div className="item_number">
@@ -178,7 +177,9 @@ function Cart(props) {
             <button>CHECK OUT</button>
           </div>
         </div>
-      </div>
+      </div>) : (
+        <h1></h1>
+      )}
     </div>
   );
 }

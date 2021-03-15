@@ -180,39 +180,54 @@ function Cart(props) {
           <h1>No Item</h1>
         )}
       </div>
-      { props.cartList.length != 0 ? (
-      <div>
-        <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-          Check Out
-        </Button>
-        <Dialog
-          fullScreen={fullScreen}
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="responsive-dialog-title"
-          id="dialog"
-        >
-          <DialogTitle id="responsive-dialog-title">Summary</DialogTitle>
-          <DialogContent>
-            <div className="item_number">
-              <h3>Total Items:</h3>
-              <h3>{props.totalItems}</h3>
-            </div>
-            <div className="item_number">
-              <h3>Total Price:</h3>
-              <h3> {`$${props.totalPrice}`} </h3>
-            </div>
-          </DialogContent>
-          <DialogActions>
-          <Button onClick={handleClose} color="primary" id="cancel_dialog">
-              Cancel
-            </Button>
-            <Button onClick={handleClose} color="primary" id="pay_dialog">
-              Proceed To Pay
-            </Button>
-          </DialogActions>
-        </Dialog>
-      </div>) : (
+      {props.cartList.length != 0 ? (
+        <div>
+          <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+            Check Out
+          </Button>
+          <Dialog
+            fullScreen={fullScreen}
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="responsive-dialog-title"
+            id="dialog"
+          >
+            <DialogTitle id="responsive-dialog-title">
+              <h2 id="summary_text">SUMMARY</h2>
+            </DialogTitle>
+            <DialogContent>
+              <div id="summary_numbers">
+                <div className="item_number">
+                  <h3>Total Items:</h3>
+                  <h3>{props.totalItems}</h3>
+                </div>
+                <div className="item_number">
+                  <h3>Total Price:</h3>
+                  <h3> {`$${props.totalPrice}`} </h3>
+                </div>
+              </div>
+            </DialogContent>
+            <DialogActions>
+              <Button
+                onClick={handleClose}
+                color="primary"
+                autoFocus
+                id="cancel_dialog"
+              >
+                Cancel
+              </Button>
+              <Button
+                onClick={handleClose}
+                color="primary"
+                autoFocus
+                id="pay_dialog"
+              >
+                Proceed To Pay
+              </Button>
+            </DialogActions>
+          </Dialog>
+        </div>
+      ) : (
         <h1></h1>
       )}
     </div>

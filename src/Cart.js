@@ -249,17 +249,17 @@ function Cart(props) {
         onClose={clickClose}
         aria-labelledby="responsive-dialog-title"
       >
-        <DialogTitle id="responsive-dialog-title" style={{display: "flex", justifyContent: "center"}}>{itemDetail?.name}</DialogTitle>
+        <h2 id="responsive-dialog-title" style={{display: "flex", justifyContent: "center", fontSize: "35px", color: "rgb(106, 106, 248)", fontFamily: "'Akaya Telivigala', cursive"}}>{itemDetail?.name}</h2>
         <DialogContent>
           <div className="img_div" style={{display: "flex", justifyContent: "center"}}>
             <img
               src={itemDetail?.imagesrc}
               alt="Dog Image"
-              width="400"
-              height="250"
+              width="500"
+              height="300"
             />
             </div>
-            <DialogContentText style={{display: "flex", justifyContent: "center", textAlign: "center"}}>
+            <DialogContentText style={{display: "flex", justifyContent: "center", textAlign: "center", fontSize: "25px", color: "rgb(106, 106, 248)", fontFamily: "'Akaya Telivigala', cursive"}}>
               {itemDetail?.description}
             </DialogContentText>
           </DialogContent>

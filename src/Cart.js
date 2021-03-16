@@ -59,7 +59,7 @@ function Cart(props) {
 
   const handleClose = () => {
     setOpen(false);
-  }
+  };
 
   let clear = () => {
     store.dispatch({
@@ -134,7 +134,7 @@ function Cart(props) {
             .map((val, key) => {
               return (
                 <Card className={classes.root}>
-                  <CardActionArea onClick={()=>clickOpen(val)}>
+                  <CardActionArea onClick={() => clickOpen(val)}>
                     <CardMedia
                       className={classes.media}
                       image={val.imagesrc}
@@ -165,7 +165,12 @@ function Cart(props) {
                     >
                       <AddCircleOutlineIcon />
                     </Button>
-                    <Typography gutterBottom variant="h5" component="h2" style={{color: "rgb(106, 106, 248)"}}>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="h2"
+                      style={{ color: "rgb(106, 106, 248)" }}
+                    >
                       {val.quantity}
                     </Typography>
                     <Button
@@ -242,34 +247,63 @@ function Cart(props) {
       ) : (
         <h1></h1>
       )}
-          <div className="item_detail_div">
-      <Dialog
-        fullScreen={fullScreen}
-        open={openDialog}
-        onClose={clickClose}
-        aria-labelledby="responsive-dialog-title"
-      >
-        <h2 id="responsive-dialog-title" style={{display: "flex", justifyContent: "center", fontSize: "35px", color: "rgb(106, 106, 248)", fontFamily: "'Akaya Telivigala', cursive"}}>{itemDetail?.name}</h2>
-        <DialogContent>
-          <div className="img_div" style={{display: "flex", justifyContent: "center"}}>
-            <img
-              src={itemDetail?.imagesrc}
-              alt="Dog Image"
-              width="500"
-              height="300"
-            />
+      <div className="item_detail_div">
+        <Dialog
+          fullScreen={fullScreen}
+          open={openDialog}
+          onClose={clickClose}
+          aria-labelledby="responsive-dialog-title"
+        >
+          <h2
+            id="responsive-dialog-title"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              fontSize: "35px",
+              color: "rgb(106, 106, 248)",
+              fontFamily: "'Akaya Telivigala', cursive",
+            }}
+          >
+            {itemDetail?.name}
+          </h2>
+          <DialogContent>
+            <div
+              className="img_div"
+              style={{ display: "flex", justifyContent: "center" }}
+            >
+              <img
+                src={itemDetail?.imagesrc}
+                alt="Dog Image"
+                width="500"
+                height="300"
+              />
             </div>
-            <DialogContentText style={{display: "flex", justifyContent: "center", textAlign: "center", fontSize: "25px", color: "rgb(106, 106, 248)", fontFamily: "'Akaya Telivigala', cursive", marginTop: "20px"}}>
+            <DialogContentText
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                textAlign: "center",
+                fontSize: "25px",
+                color: "rgb(106, 106, 248)",
+                fontFamily: "'Akaya Telivigala', cursive",
+                marginTop: "20px",
+              }}
+            >
               {itemDetail?.description}
             </DialogContentText>
           </DialogContent>
-        <DialogActions>
-          <Button autoFocus id="cancel_dialog" onClick={clickClose} color="primary">
-            Close
-          </Button>
-        </DialogActions>
-      </Dialog>
-    </div>
+          <DialogActions>
+            <Button
+              autoFocus
+              id="cancel_dialog"
+              onClick={clickClose}
+              color="primary"
+            >
+              Close
+            </Button>
+          </DialogActions>
+        </Dialog>
+      </div>
     </div>
   );
 }
@@ -277,11 +311,10 @@ function Cart(props) {
 const mapStateToProps = (state) => {
   let totalItems = 0;
   let totalPrice = 0;
-  
+
   state.cartList.map((item) => {
     totalItems += item.quantity;
     totalPrice += item.quantity * item.price;
-    
   });
   return {
     cartList: state.cartList,

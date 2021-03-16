@@ -127,7 +127,7 @@
 }
 
 #minus_cart_btn:hover {
-  background: rgba(106, 106, 248, 0.13);;
+  background: rgba(106, 106, 248, 0.13);
 }
 
 #del_cart_btn {
@@ -152,7 +152,7 @@
 .main_summary_div {
   display: flex;
   flex-flow: row-reverse;
-  margin: 50px 16px 0 0
+  margin: 50px 16px 0 0;
 }
 
 .item_Price {

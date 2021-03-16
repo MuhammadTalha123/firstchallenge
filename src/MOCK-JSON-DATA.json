@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "name": "Lizard",
+    "name": "LIZARD",
     "price": 20,
     "quantity": 0,
     "imagesrc": "https://static.scientificamerican.com/sciam/cache/file/35BB522C-1F80-4EA3-AD1A257F9B636908_source.jpg?w=590&h=800&47D6048D-D602-419B-B2B0A97B77D665FE",
@@ -9,7 +9,7 @@
   },
   {
     "id": "2",
-    "name": "Snake",
+    "name": "SNAKE",
     "price": 50,
     "quantity": 0,
     "imagesrc": "https://ichef.bbci.co.uk/news/1024/cpsprodpb/1486F/production/_105597048_snakes8.jpg",
@@ -17,7 +17,7 @@
   },
   {
     "id": "3",
-    "name": "Lion",
+    "name": "LION",
     "price": 90,
     "quantity": 0,
     "imagesrc": "https://cdn.britannica.com/29/150929-050-547070A1/lion-Kenya-Masai-Mara-National-Reserve.jpg",
@@ -25,7 +25,7 @@
   },
   {
     "id": "4",
-    "name": "Elephant",
+    "name": "ELEPHANT",
     "price": 80,
     "quantity": 0,
     "imagesrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2glv2VNOFidcNvn2Cu1ptDSDVWlZrx_qTDQ&usqp=CAU",
@@ -33,7 +33,7 @@
   },
   {
     "id": "5",
-    "name": "Dog",
+    "name": "DOG",
     "price": 30,
     "quantity": 0,
     "imagesrc": "https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg",
@@ -41,7 +41,7 @@
   },
   {
     "id": "6",
-    "name": "Horse",
+    "name": "HORSE",
     "price": 60,
     "quantity": 0,
     "imagesrc": "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f664f1ec2191c793cf3bd8d%2F0x0.jpg",
@@ -49,7 +49,7 @@
   },
   {
     "id": "7",
-    "name": "Panda",
+    "name": "PANDA",
     "price": 70,
     "quantity": 0,
     "imagesrc": "https://i.pinimg.com/originals/e0/3d/5b/e03d5b812b2734826f76960eca5b5541.jpg",
@@ -57,7 +57,7 @@
   },
   {
     "id": "8",
-    "name": "Monkey",
+    "name": "MONKEY",
     "price": 40,
     "quantity": 0,
     "imagesrc": "https://api.hub.jhu.edu/factory/sites/default/files/styles/landscape/public/monkey092018.jpg?itok=dwu7HH3a",
@@ -65,7 +65,7 @@
   },
   {
     "id": "9",
-    "name": "Fish",
+    "name": "FISH",
     "price": 10,
     "quantity": 0,
     "imagesrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScahFkVI5tuTj4QHR5Sz0KHn0u1PtIeMGKzA&usqp=CAU",

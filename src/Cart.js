@@ -259,7 +259,7 @@ function Cart(props) {
             style={{
               display: "flex",
               justifyContent: "center",
-              fontSize: "30px",
+              fontSize: "35px",
               color: "rgb(106, 106, 248)",
               fontFamily: "'Akaya Telivigala', cursive",
             }}
@@ -276,6 +276,7 @@ function Cart(props) {
                 alt="Dog Image"
                 width="450"
                 height="275"
+                style={{borderRadius: "10px"}}
               />
             </div>
             <h2

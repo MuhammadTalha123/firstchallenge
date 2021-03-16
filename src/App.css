@@ -116,11 +116,7 @@
 }
 
 #plus_cart_btn:hover {
-  border: 1px solid white;
-  background: rgb(106, 106, 248);
-  color: white;
-  transform: scale(1.1);
-  transition: 0.4s;
+  background: rgba(106, 106, 248, 0.13);
 }
 
 #minus_cart_btn {
@@ -131,11 +127,7 @@
 }
 
 #minus_cart_btn:hover {
-  border: 1px solid white;
-  background: rgb(106, 106, 248);
-  color: white;
-  transform: scale(1.1);
-  transition: 0.4s;
+  background: rgba(106, 106, 248, 0.13);;
 }
 
 #del_cart_btn {
@@ -146,11 +138,7 @@
 }
 
 #del_cart_btn:hover {
-  border: 1px solid white;
-  background: red;
-  color: white;
-  transform: scale(1.1);
-  transition: 0.4s;
+  background: rgba(245, 111, 111, 0.164);
 }
 
 .cart_main_div h1 {

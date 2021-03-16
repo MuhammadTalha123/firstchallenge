@@ -165,7 +165,7 @@ function Cart(props) {
                     >
                       <AddCircleOutlineIcon />
                     </Button>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography gutterBottom variant="h5" component="h2" style={{color: "rgb(106, 106, 248)"}}>
                       {val.quantity}
                     </Typography>
                     <Button
@@ -259,7 +259,7 @@ function Cart(props) {
               height="300"
             />
             </div>
-            <DialogContentText style={{display: "flex", justifyContent: "center", textAlign: "center", fontSize: "25px", color: "rgb(106, 106, 248)", fontFamily: "'Akaya Telivigala', cursive"}}>
+            <DialogContentText style={{display: "flex", justifyContent: "center", textAlign: "center", fontSize: "25px", color: "rgb(106, 106, 248)", fontFamily: "'Akaya Telivigala', cursive", marginTop: "20px"}}>
               {itemDetail?.description}
             </DialogContentText>
           </DialogContent>

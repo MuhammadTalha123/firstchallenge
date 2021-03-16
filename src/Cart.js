@@ -279,17 +279,17 @@ function Cart(props) {
               />
             </div>
             <h2
-            id="responsive-dialog-title"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              fontSize: "25px",
-              color: "rgb(106, 106, 248)",
-              fontFamily: "'Akaya Telivigala', cursive",
-            }}
-          >
-            {`Price $${itemDetail?.price}`}
-          </h2>
+              id="responsive-dialog-title"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                fontSize: "25px",
+                color: "rgb(106, 106, 248)",
+                fontFamily: "'Akaya Telivigala', cursive",
+              }}
+            >
+              {`Price $${itemDetail?.price}`}
+            </h2>
             <DialogContentText
               style={{
                 display: "flex",
@@ -306,7 +306,7 @@ function Cart(props) {
           <DialogActions>
             <Button
               autoFocus
-              id="cancel_dialog"
+              id="close_dialog"
               onClick={clickClose}
               color="primary"
             >

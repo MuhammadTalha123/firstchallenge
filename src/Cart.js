@@ -259,7 +259,7 @@ function Cart(props) {
             style={{
               display: "flex",
               justifyContent: "center",
-              fontSize: "35px",
+              fontSize: "30px",
               color: "rgb(106, 106, 248)",
               fontFamily: "'Akaya Telivigala', cursive",
             }}
@@ -274,10 +274,22 @@ function Cart(props) {
               <img
                 src={itemDetail?.imagesrc}
                 alt="Dog Image"
-                width="500"
-                height="300"
+                width="450"
+                height="275"
               />
             </div>
+            <h2
+            id="responsive-dialog-title"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              fontSize: "25px",
+              color: "rgb(106, 106, 248)",
+              fontFamily: "'Akaya Telivigala', cursive",
+            }}
+          >
+            {`Price $${itemDetail?.price}`}
+          </h2>
             <DialogContentText
               style={{
                 display: "flex",
@@ -286,7 +298,6 @@ function Cart(props) {
                 fontSize: "25px",
                 color: "rgb(106, 106, 248)",
                 fontFamily: "'Akaya Telivigala', cursive",
-                marginTop: "20px",
               }}
             >
               {itemDetail?.description}

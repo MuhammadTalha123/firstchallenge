@@ -42,7 +42,7 @@ function Cart(props) {
   const [itemDetail, setItemDetail] = React.useState({});
 
   const theme = useTheme();
-  const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   const handleClickOpen = () => {
     setOpen(true);

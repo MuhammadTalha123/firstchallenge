@@ -289,7 +289,7 @@ function Cart(props) {
                 fontFamily: "'Akaya Telivigala', cursive",
               }}
             >
-              {`Price $${itemDetail?.price}`}
+              {`Price: $${itemDetail?.price}`}
             </h2>
             <DialogContentText
               style={{
